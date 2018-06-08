@@ -21,11 +21,12 @@ new Vue({
   components: { App },
   created () {
     firebase.initializeApp({
-      apiKey: '',
-      authDomain: '',
-      databaseURL: '',
-      projectId: '',
-      storageBucket: ''
+      apiKey: 'AIzaSyDiEZD9eP8_JxuXD61qRwAJrnsC46cnOqY',
+      authDomain: 'fmimproveplayers.firebaseapp.com',
+      databaseURL: 'https://fmimproveplayers.firebaseio.com',
+      projectId: 'fmimproveplayers',
+      storageBucket: 'fmimproveplayers.appspot.com',
+      messagingSenderId: '13266109036'
     })
     firebase.auth().onAuthStateChanged((user) => {
       if (user) {
